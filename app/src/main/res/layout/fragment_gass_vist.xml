@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--  referenced from:https://guides.codepath.com/android/Working-with-the-EditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="30">
+
+        <EditText
+            android:id="@+id/edit_text_station_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Gas Station Name "
+            android:inputType="text"
+            android:text=""
+            android:maxLength="30"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select fuel type:"
+        android:paddingLeft="5sp"/>
+
+    <RadioGroup
+        android:id="@+id/fuel_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/Gasoline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gasoline" />
+
+        <RadioButton
+            android:id="@+id/Diesel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diesel" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_text_fuel_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:hint="Amount in liters"
+        android:paddingLeft="5sp"/>
+
+    <EditText
+        android:id="@+id/edit_text_fuel_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:hint="Price($)/L"
+        android:paddingLeft="5sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select visit date:"
+        android:paddingTop="5sp"
+        android:paddingLeft="5sp"
+        />
+
+    <DatePicker
+        android:id="@+id/visitDate"
+        android:layout_width="match_parent"
+        android:layout_height="301dp"
+        android:datePickerMode="spinner"
+        android:padding="5sp"
+        android:calendarViewShown="false"/>
+
+</LinearLayout>

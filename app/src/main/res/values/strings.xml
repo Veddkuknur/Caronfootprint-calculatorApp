@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">kuknur-MyCarFootprint</string>
+    <string name="diesel">Desiel</string>
+    <string-array name="languages">
+        <item>Gasoline</item>
+        <item>Diesel</item>
+    </string-array>
+</resources>
